@@ -1,0 +1,21 @@
+import random
+
+cont=0
+rod=1
+double6=0
+d1=random.Random()
+d2=random.Random()
+
+while cont<10:
+  x=d1.randrange(1,7)
+  y=d2.randrange(1,7)
+  print(f"Rodada nº {rod}!")
+  print(f"O primeiro dado deu: {x}!")
+  print(f"O segundo dado deu: {y}!")
+  if x==6 and y==6:
+    double6+=1
+    print("Ambos os dados deram 6!")
+  cont+=1
+  rod+=1
+  print("="*50)
+print(f"Os dois dados deram o valor 6 no total de {double6} veze(s)!")
